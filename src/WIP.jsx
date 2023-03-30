@@ -4,7 +4,8 @@ import {Header, Button, Popup, Modal} from 'semantic-ui-react'
 const WIP = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div class="absCtr">
+    <div class='absCtr'>
+      <div class='child'>
       <u style={{color: 'white'}}><Header style={{fontSize: '90px'}} as='h1' inverted>Not so fast!</Header></u>
       <Header as='h1' inverted>This site is still a <span style={{color: '#54ffff'}}>work in progress!</span></Header>
       <Header as='h2' inverted>Enjoy some links in the meantime:</Header>
@@ -36,6 +37,7 @@ const WIP = () => {
         />
       </Modal.Actions>
     </Modal>
+    </div>
     </div>
   )
 }
