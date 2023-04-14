@@ -2,12 +2,18 @@ body {
     background-color:rgb(10, 25, 44);
 }
 
-.absCtr {
+.about-txt {
+    color: #fff;
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+    font-family: 'Sono', sans-serif;
+    font-size: 2vh;
+}
+
+.absCtr {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 50vh;
 }
 
 .child {
@@ -39,7 +45,7 @@ body {
         opacity: 0;
     }
     to {
-         opacity: 1;   
+        opacity: 1;   
     }
 }
 @-moz-keyframes fading {
@@ -47,7 +53,7 @@ body {
         opacity: 0;
     }
     to {
-         opacity: 1;   
+        opacity: 1;   
     }
 }
 
@@ -56,6 +62,6 @@ body {
         opacity: 0;
     }
     to {
-         opacity: 1;   
+        opacity: 1;   
     }
 }

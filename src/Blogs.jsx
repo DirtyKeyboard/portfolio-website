@@ -1,13 +1,20 @@
 import React from 'react'
 import NavBar from './NavBar'
 import {Header} from 'semantic-ui-react'
+import {motion} from 'framer-motion'
 
 const Blogs = () => {
   return (
-    <div>
-      <NavBar />
-      <Header as='h1' inverted>Blogs</Header>
-    </div>
+    <>
+    <NavBar />
+    <motion.div className='absCtr'
+    // initial={{opacity: 0}}
+    // animate={{opacity: 1}}
+    // exit={{opcaity: 0}}
+    >
+      <Header as='h1' style={{fontSize: '6vh'}} inverted>Blogs</Header>
+    </motion.div>
+    </>
   )
 }
 

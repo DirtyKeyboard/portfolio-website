@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, Grid, Button } from 'semantic-ui-react'
 import { useNavigate } from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 const Landing = () => {
   let canClick = false;
@@ -12,7 +13,7 @@ const Landing = () => {
       </Grid.Row>
       <Grid.Row style={{height: '50%'}}>
         <Header className="invisible two" as='h1' style={{fontSize: '3.5vh'}}  inverted>I am a Full Stack Software Engineer <br/><Button className="invisible three" icon='code' onAnimationEnd={() => canClick = true} style={{fontSize: '2vh'}} onClick={() => {
-          if (canClick) nav('/wip')}} inverted color='teal' content="View My Work"/></Header>
+          if (canClick) nav('/about')}} inverted color='teal' content="View My Work"/></Header>
       </Grid.Row>
     </Grid>
   )
