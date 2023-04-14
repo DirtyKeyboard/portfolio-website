@@ -16,8 +16,7 @@ const WIP = () => {
       <Modal
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
-      open={open}
-    >
+      open={open}>
       <Modal.Header>Contact Me</Modal.Header>
       <Modal.Content>
         <Modal.Description>

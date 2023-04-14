@@ -17,7 +17,6 @@ const About = () => {
       <Image src="https://media.licdn.com/dms/image/D5603AQGJ5Pay0eE8Lw/profile-displayphoto-shrink_800_800/0/1679001906714?e=1686787200&v=beta&t=J9dRKGHpYEkiSyxkKDcPMYaNrahwuWLhAlKNp2cvs-Q"
       size="medium" circular/>
     <br />
-    <Container text>
       <p className='about-txt'>
       Hello, My name is Andrew Hawileh, I am a Full Stack Software Developer based in Plano, Tx. 
       I have always been an analytically minded person, and I was drawn to coding when I was about 10 years
@@ -32,7 +31,6 @@ const About = () => {
       build upon my knowledge and I will always have a want to excel in whatever path I take.
       </p>
       <Divider />
-      </Container>
     <Header as='h1' style={{fontSize: '3vh', fontStyle: 'italic'}} inverted>Skills</Header>
     <Label.Group>
       <Label color="teal" inverted>JavaScript (ES6)</Label>

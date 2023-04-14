@@ -7,6 +7,8 @@ body {
     text-align: center;
     font-family: 'Sono', sans-serif;
     font-size: 2vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 .absCtr {
