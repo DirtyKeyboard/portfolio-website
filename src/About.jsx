@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
-import {Header, Image, Container, Divider, Label} from 'semantic-ui-react'
+import {Header, Image, Divider, Label} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
 
 const About = () => {

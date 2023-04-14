@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import NavBar from './NavBar'
 import {Header, Form, Button, TextArea, Message} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-  const [formData, setFormData] = useState({name: "", email: "", msg: ""})
+  const [formData, setFormData] = useState({name: "", email: "", message: ""})
+  const [sent, setSent] = useState('')
   const pStyle = {
     color: 'white',
     fontFamily: 'lato',
@@ -23,16 +25,46 @@ const Contact = () => {
     marginLeft: '25vw',
     marginRight: '25vw'
   }
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     const data = {...formData}
-    e.target.reset()
-    setFormData({name: "", email: "", msg: ""})
-    console.log(formData)
+    if (data.name.length > 0 && data.email.length > 0 && data.message.length > 0) {
+      await sendEmail()
+      e.target.reset()
+      setFormData({name: "", email: "", message: ""})
+    }
+    else
+    {
+      showErrorMessage()
+    }
   }
 
   function handleChange(e) {
     setFormData({...formData, [e.target.name]: e.target.value})
   }
+
+  function showSuccessMessage() {
+    setSent('success')
+    setTimeout(() => setSent(''), 4000)
+  }
+
+  function showErrorMessage() {
+    setSent('error')
+    setTimeout(() => setSent(''), 4000)
+  }
+
+  const sendEmail = () => {
+    emailjs.send('service_7yv24ri', 'template_ka5cr6y', formData, 'WmFIqIrlZBJvUZjhq')
+      .then((result) => {
+          console.log(result.text); //result.text == OK when done.
+          if (result.text === 'OK') {
+            showSuccessMessage()
+          }
+      }, (error) => {
+          console.log(error.text); 
+      });
+  };
+
+
   return (
     <>
     <NavBar />
@@ -47,18 +79,23 @@ const Contact = () => {
       </div>
       <Form style={formBox} onSubmit={handleSubmit}>
         <p style={pStyle}>Your Name</p>
-        <Form.Input onChange={handleChange} name='name' text='true' />
+        <Form.Input fluid onChange={handleChange} name='name' text='true' />
         <p style={pStyle}>Your Email</p>
-        <Form.Input onChange={handleChange} name='email' text='true' />
+        <Form.Input fluid onChange={handleChange} name='email' text='true' />
         <p style={pStyle}>Message</p>
-        <TextArea onChange={handleChange} name='msg' style={{ minHeight: '30vh', marginBottom:'20px' }}/>
+        <TextArea fluid onChange={handleChange} name='message' style={{ minHeight: '30vh', marginBottom:'20px' }}/>
         <Button fluid type='submit' inverted>Submit</Button>
       </Form>
-      {/* <Message style={formBox}
-      success or error
-      header='Form Completed'
-      content="You're all signed up for the newsletter"
-    /> */}
+      {sent === 'success' ? <Message style={formBox}
+      success
+      header='Success!'
+      content="Your message has been sent! Thank you!"
+    /> : null}
+    {sent === 'error' ? <Message style={formBox}
+      error
+      header='Error!'
+      content="There was a problem sending this message, please try again!"
+    /> : null}
     </motion.div>
     </>
   )

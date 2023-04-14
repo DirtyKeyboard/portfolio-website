@@ -2,9 +2,9 @@ import React from 'react'
 import NavBar from './NavBar'
 import {Header} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
-import ImgMediaCard from './ImgMediaCard'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+
 const Projects = () => {
   return (
     <>

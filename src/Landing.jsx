@@ -1,7 +1,6 @@
 import React from 'react'
 import { Header, Grid, Button } from 'semantic-ui-react'
 import { useNavigate } from 'react-router-dom'
-import {motion} from 'framer-motion'
 
 const Landing = () => {
   let canClick = false;
