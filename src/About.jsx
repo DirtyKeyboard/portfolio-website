@@ -19,18 +19,17 @@ const About = () => {
     <br />
     <Container text>
       <p className='about-txt'>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras
-        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-        viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-        Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+      Hello, My name is Andrew Hawileh, I am a Full Stack Software Developer based in Plano, Tx. 
+      I have always been an analytically minded person, and I was drawn to coding when I was about 10 years
+      old and I discovered the BATCH programming language, which sparked my interest in coding, 
+      and began my discovery of how computers work, and it was then I began
+      to uncover how applications are built. I took my first “structured” programming class 
+      in High School, studying Java for 2 years, continuing my studies for programming
+      in college as well, where I ultimately got my Associates in Sciences with a Computer Science Focus.
+      Following my college graduation, I enrolled in a 15-week fast paced programming bootcamp known as 'Flatiron',
+      which is where I developed my full stack development skills! I look forward to 
+      finding a company with values parallel to mine that I can grow with, I am also eager to
+      build upon my knowledge and I will always have a want to excel in whatever path I take.
       </p>
       <Divider />
       </Container>
