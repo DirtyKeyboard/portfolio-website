@@ -6,6 +6,7 @@ import Projects from './Projects'
 import Blogs from './Blogs'
 import Contact from './Contact'
 import WIP from './WIP'
+import RouteNotFound from './RouteNotFound';
 
 
 const FramerRoutes = () => {
@@ -18,6 +19,7 @@ const FramerRoutes = () => {
         <Route path ="/projects" element={<Projects />} />
         <Route path ="/blogs" element={<Blogs />} />
         <Route path ="/contact" element={<Contact />} />
+        <Route path="/*" element={<RouteNotFound />}/>
     </Routes>
     )
 }
