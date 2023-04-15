@@ -83,7 +83,7 @@ const Contact = () => {
         <p style={pStyle}>Your Email</p>
         <Form.Input fluid onChange={handleChange} name='email' text='true' />
         <p style={pStyle}>Message</p>
-        <TextArea fluid onChange={handleChange} name='message' style={{ minHeight: '30vh', marginBottom:'20px' }}/>
+        <TextArea onChange={handleChange} name='message' style={{ minHeight: '30vh', marginBottom:'20px' }}/>
         <Button fluid type='submit' inverted>Submit</Button>
       </Form>
       {sent === 'success' ? <Message style={formBox}

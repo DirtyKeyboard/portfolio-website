@@ -23,7 +23,7 @@ const WIP = () => {
           <h4>I look forward to hearing from you!</h4>
           <p>E-mail: <a href="mailto:andrewh829@gmail.com">andrewh829@gmail.com</a></p>
           <p>Phone Number: +1-(469)-744-1118</p>
-          <p><em>Best way to reach me</em>: Call/Text</p>
+          <p><em>Best way to reach me</em> : Call/Text</p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>

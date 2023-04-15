@@ -33,7 +33,7 @@ export default function ImgMediaCard({title, preview, link, image}) {
           {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          <em>Preview...</em> <p />
+          <em>Preview...</em> <br />
           {preview}
           </Typography>
         </CardContent>

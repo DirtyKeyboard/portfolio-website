@@ -4,6 +4,7 @@ import {Header} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   return (
@@ -14,17 +15,18 @@ const Projects = () => {
     // animate={{opacity: 1}}
     // exit={{opcaity: 0}}
     >
-      <Header as='h1' style={{fontSize: '6vh'}} inverted>Projects</Header>
+      <Header as='h1' style={{fontSize: '6vh'}} inverted={true}>Projects</Header>
+      <Header as='h2' style={{fontSize: '3vh'}} inverted={true}>Here is a list of my projects!</Header>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={3}>
           <Grid item>
-            {/* CARD IN HERE */}
+            <ProjectCard/>
           </Grid>
           <Grid item>
-            {/* CARD IN HERE */}
+            <ProjectCard/>
           </Grid>
           <Grid item>
-            {/* CARD IN HERE */}
+            <ProjectCard/>
           </Grid>
         </Grid>
       </Box>

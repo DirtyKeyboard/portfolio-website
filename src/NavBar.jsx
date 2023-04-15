@@ -22,10 +22,10 @@ const NavBar = () => {
           <Modal.Header>Contact Me</Modal.Header>
           <Modal.Content>
             <Modal.Description>
-              <h4>I look forward to hearing from you!</h4>
-              <p>E-mail: <a href="mailto:andrewh829@gmail.com">andrewh829@gmail.com</a></p>
-              <p>Phone Number: +1-(469)-744-1118</p>
-              <p><em>Best way to reach me</em>: Call/Text</p>
+              <h4 style={{color: 'black'}}>I look forward to hearing from you!</h4>
+              <p style={{color: 'black'}}>E-mail: <a href="mailto:andrewh829@gmail.com">andrewh829@gmail.com</a></p>
+              <p style={{color: 'black'}}>Phone Number: +1-(469)-744-1118</p>
+              <p style={{color: 'black'}}><em>Best way to reach me</em> : Call/Text</p>
             </Modal.Description>
           </Modal.Content>
           <Modal.Actions>

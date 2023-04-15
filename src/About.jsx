@@ -13,7 +13,7 @@ const About = () => {
     // exit={{opcaity: 0}}
     >
       
-      <Header as='h1' style={{fontSize: '6vh'}} inverted>About Me</Header>
+      <Header as='h1' style={{fontSize: '6vh'}} inverted={true}>About Me</Header>
       <Image src="https://media.licdn.com/dms/image/D5603AQGJ5Pay0eE8Lw/profile-displayphoto-shrink_800_800/0/1679001906714?e=1686787200&v=beta&t=J9dRKGHpYEkiSyxkKDcPMYaNrahwuWLhAlKNp2cvs-Q"
       size="medium" circular/>
     <br />
@@ -31,13 +31,13 @@ const About = () => {
       build upon my knowledge and I will always have a want to excel in whatever path I take.
       </p>
       <Divider />
-    <Header as='h1' style={{fontSize: '3vh', fontStyle: 'italic'}} inverted>Skills</Header>
+    <Header as='h1' style={{fontSize: '3vh', fontStyle: 'italic'}} inverted={true}>Skills</Header>
     <Label.Group>
-      <Label color="teal" inverted>JavaScript (ES6)</Label>
-      <Label color="teal" inverted>React.JS</Label>
-      <Label color="teal" inverted>Python</Label>
-      <Label color="teal" inverted>Flask</Label>
-      <Label color="teal" inverted>SQLAlchemy</Label>
+      <Label color="teal" inverted='true'>JavaScript (ES6)</Label>
+      <Label color="teal" inverted='true'>React.JS</Label>
+      <Label color="teal" inverted='true'>Python</Label>
+      <Label color="teal" inverted='true'>Flask</Label>
+      <Label color="teal" inverted='true'>SQLAlchemy</Label>
     </Label.Group>
     </motion.div>
     </>
