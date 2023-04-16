@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import ProjectCard from './ProjectCard';
 import bosslogo from './assets/logo.png'
 import ftrlogo from './assets/chefhatIcon.png'
+import coffee from './assets/coffee.png'
 
 const Projects = () => {
   return (
@@ -39,7 +40,13 @@ const Projects = () => {
             langs={["react", "js", "html5", "css3"]}/> {/* image, title, preview, link */}
           </Grid>
           <Grid item>
-            {/* <ProjectCard/> */}
+          <ProjectCard
+            image={coffee}
+            title="Coffee Generator"
+            preview="Uses hard-coded data to generate a random drink. Includes hot/cold coffee, teas, etc."
+            link="https://github.com/DirtyKeyboard/coffee-generator/"
+            site="https://coffee.andrewhawileh.com/"
+            langs={["react", "js", "html5", "css3"]}/> {/* image, title, preview, link */}
           </Grid>
         </Grid>
       </Box>
