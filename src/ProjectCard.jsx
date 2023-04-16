@@ -41,7 +41,7 @@ const ProjectCard = ({image="https://www.salonlfc.com/wp-content/uploads/2018/01
                 </CardContent>
                 <CardActions>
                     <Button size="small" href={link}>See Repo</Button>
-                    <Button size="small">Video Example</Button>
+                    <Button size="small" disabled>Deployed Version</Button>
                 </CardActions>
             </Card>
         </ThemeProvider>

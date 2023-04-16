@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
-import {Header} from 'semantic-ui-react'
+import {Divider} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
 import ImgMediaCard from './ImgMediaCard'
 import Grid from '@mui/material/Grid';
@@ -15,8 +15,9 @@ const Blogs = () => {
     // animate={{opacity: 1}}
     // exit={{opcaity: 0}}
     >
-      <Header as='h1' style={{fontSize: '6vh'}} inverted>Blogs</Header>
-      <Header as='h2' style={{fontSize: '3vh'}} inverted>Here is a list of all of my medium blogs!</Header>
+      <Divider inverted horizontal style={{paddingLeft: '6vw', paddingRight: '6vw'}}>
+        <h1 className='header' style={{fontSize: '10vh'}}>BLOGS</h1>
+      </Divider>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={3}>
           <Grid item><ImgMediaCard title="Sending GET & POST requests with Fetch API in JavaScript"

@@ -74,8 +74,8 @@ const Contact = () => {
     // exit={{opcaity: 0}}
     >
       <div style={divStyle}>
-        <Header as='h1' style={{fontSize: '6vh'}} inverted>Send Me and Email!</Header>
-        <Header as='h2' style={{fontSize: '3vh', fontStyle:'italic'}} inverted>I will get back to you as soon as I can!</Header>
+      <h1 className='header' style={{fontSize: '10vh'}}>CONTACT ME</h1>
+        <Header as='h2' style={{fontSize: '3vh', fontStyle:'italic', fontWeight: 'lighter'}} inverted>I will get back to you as soon as I can!</Header>
       </div>
       <Form style={formBox} onSubmit={handleSubmit}>
         <p style={pStyle}>Your Name</p>

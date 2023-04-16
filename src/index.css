@@ -5,10 +5,15 @@ body {
 .about-txt {
     color: #fff;
     text-align: center;
-    font-family: 'Sono', sans-serif;
     font-size: 2vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.header {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    color: white;
 }
 
 .absCtr {
