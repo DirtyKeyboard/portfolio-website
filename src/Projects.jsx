@@ -5,6 +5,7 @@ import {motion} from 'framer-motion'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import ProjectCard from './ProjectCard';
+import bosslogo from './assets/logo.png'
 
 const Projects = () => {
   return (
@@ -20,13 +21,18 @@ const Projects = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={3}>
           <Grid item>
-            <ProjectCard/>
+            <ProjectCard
+            image={bosslogo}
+            title="Best One Stop Shop!"
+            preview="This application allowed the purchase and sale of car listings, using a local rest API to keep changes persistent"
+            link="https://github.com/DirtyKeyboard/phase-1-project"
+            langs={["js", "html5", "css3"]}/> {/* image, title, preview, link */}
           </Grid>
           <Grid item>
-            <ProjectCard/>
+            {/* <ProjectCard/> */}
           </Grid>
           <Grid item>
-            <ProjectCard/>
+            {/* <ProjectCard/> */}
           </Grid>
         </Grid>
       </Box>
