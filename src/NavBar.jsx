@@ -25,6 +25,7 @@ const NavBar = () => {
               <h4 style={{color: 'black'}}>I look forward to hearing from you!</h4>
               <p style={{color: 'black'}}>E-mail: <a href="mailto:andrewh829@gmail.com">andrewh829@gmail.com</a></p>
               <p style={{color: 'black'}}>Phone Number: +1-(469)-744-1118</p>
+              <p style={{color: 'black'}}>My Resume: <a href="https://docs.google.com/document/d/1BiLQtS1wJo8pAFmy2yO8jMfBZVyB_dYj2NzWra7mN4M/edit?usp=sharing">Google Drive</a></p>
               <p style={{color: 'black'}}><em>Best way to reach me</em> : Call/Text</p>
             </Modal.Description>
           </Modal.Content>

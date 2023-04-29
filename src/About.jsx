@@ -47,10 +47,12 @@ const About = () => {
     <Header as='h1' style={{fontSize: '3vh', fontStyle: 'italic', fontWeight: 'lighter'}} inverted={true}>Skills</Header>
     <Label.Group>
       <span style={label}>JavaScript (ES6)</span>
-      <span style={label}>React.JS</span>
+      <span style={label}>React</span>
       <span style={label}>Python</span>
       <span style={label}>Flask</span>
       <span style={label}>SQL Alchemy</span>
+      <span style={label}>Express</span>
+      <span style={label}>Prisma</span>
     </Label.Group>
     </motion.div>
     </>
