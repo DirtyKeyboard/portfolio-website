@@ -10,7 +10,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import {Icon} from 'semantic-ui-react'
 
 //Project Card will have Name, Preview, Langs. On click it will expand and show Detailed Desc, and link to a video showcase
-const ProjectCard = ({image="https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled.png", title="No Title", preview="No Desc", link="https://andrewhawileh.com/404", langs, site=""}) => {
+const ProjectCard = ({image="https://www.salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled.png", title="No Title", preview="No Desc", link="https://andrewhawileh.com/404", langs=[], site="", video="", setVideo}) => {
     const darkTheme = createTheme({
         palette: {
             mode: 'dark',
@@ -41,7 +41,8 @@ const ProjectCard = ({image="https://www.salonlfc.com/wp-content/uploads/2018/01
                 </CardContent>
                 <CardActions>
                     <Button size="small" href={link}>See Repo</Button>
-                    {site ? <Button size="small" href={site}>See Website</Button> : <Button size="small" disabled>See Website</Button>}
+                    {site ? <Button size="small" href={site}>See Website</Button> : 
+                        video ? <Button size="small" onClick={() => setVideo(video)}>See Video</Button> : <Button size="small" disabled>See Website</Button>}
                 </CardActions>
             </Card>
         </ThemeProvider>

@@ -69,9 +69,9 @@ const Contact = () => {
     <>
     <NavBar />
     <motion.div
-    // initial={{opacity: 0}}
-    // animate={{opacity: 1}}
-    // exit={{opcaity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opcaity: 0}}
     >
       <div style={divStyle}>
       <h1 className='header' style={{fontSize: '10vh'}}>CONTACT ME</h1>

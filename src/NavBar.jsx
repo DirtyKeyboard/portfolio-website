@@ -4,13 +4,14 @@ import {Menu, Icon, Modal, Button} from 'semantic-ui-react'
 
 const NavBar = () => {
   const [open, setOpen] = useState(false)
-  const style = {padding: '15px', marginLeft: '30px', marginRight: '30px'}
+  const style = {padding: '.8vw', marginLeft: '1vw', marginRight: '1vw'}
   return (
       <Menu secondary pointing inverted>
           <Menu.Item as={NavLink} style={style} exact="true"  to="/about" activeclassname="active">About</Menu.Item>
           <Menu.Item as={NavLink} style={style} exact="true"  to="/projects" activeclassname="active">My Projects</Menu.Item>
           <Menu.Item as={NavLink} style={style} exact="true"  to="/blogs" activeclassname="active">Blogs</Menu.Item>
           <Menu.Item as={NavLink} style={style} exact="true"  to="/contact" activeclassname="active">Contact</Menu.Item>
+
           <Menu.Item position='right'><a href="https://medium.com/@andrewh829"><Icon name='medium' size='big'/></a></Menu.Item>
           <Menu.Item><a href="https://www.linkedin.com/in/andrewhawileh/"><Icon name='linkedin' size='big'/></a></Menu.Item>
           <Menu.Item><a href="https://github.com/DirtyKeyboard"><Icon name='github' size='big'/></a></Menu.Item>

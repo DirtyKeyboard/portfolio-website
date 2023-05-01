@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
-import {Header, Divider, Label} from 'semantic-ui-react'
+import {Header, Divider} from 'semantic-ui-react'
 import {motion} from 'framer-motion'
 
 const About = () => {
@@ -11,9 +11,9 @@ const About = () => {
     <>
     <NavBar />
     <motion.div className='absCtr'
-    // initial={{opacity: 0}}
-    // animate={{opacity: 1}}
-    // exit={{opcaity: 0}}
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opcaity: 0}}
     >
       <Divider inverted horizontal style={{paddingLeft: '6vw', paddingRight: '6vw'}}>
         <h1 className='header' style={{fontSize: '10vh'}}>ABOUT ME</h1>
@@ -45,7 +45,7 @@ const About = () => {
       alt="self portrait"/>
       <Divider />
     <Header as='h1' style={{fontSize: '3vh', fontStyle: 'italic', fontWeight: 'lighter'}} inverted={true}>Skills</Header>
-    <Label.Group>
+    <div style={{display: 'flex', width: '50%', justifyContent:'center', flexWrap: 'wrap'}}>
       <span style={label}>JavaScript (ES6)</span>
       <span style={label}>React</span>
       <span style={label}>Python</span>
@@ -53,7 +53,7 @@ const About = () => {
       <span style={label}>SQL Alchemy</span>
       <span style={label}>Express</span>
       <span style={label}>Prisma</span>
-    </Label.Group>
+    </div>
     </motion.div>
     </>
   )
