@@ -40,7 +40,7 @@ const About = () => {
       build upon my knowledge and I will always have a want to excel in whatever path I take.
       </p>
       <br />
-      <img src="https://media.licdn.com/dms/image/D5603AQGJ5Pay0eE8Lw/profile-displayphoto-shrink_800_800/0/1679001906714?e=1686787200&v=beta&t=J9dRKGHpYEkiSyxkKDcPMYaNrahwuWLhAlKNp2cvs-Q"
+      <img src="https://media.licdn.com/dms/image/D5603AQEuh47kLjFexA/profile-displayphoto-shrink_200_200/0/1683154699639?e=1688601600&v=beta&t=GT1PZgzvMpUdw8Qu2JTF17wORyNMxoJZE9dq1w_Oun4"
       style={{borderRadius: '50%', width: '10vw'}}
       alt="self portrait"/>
       <Divider />
