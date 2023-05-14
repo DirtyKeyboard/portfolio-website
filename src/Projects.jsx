@@ -7,6 +7,7 @@ import bosslogo from './assets/logo.png'
 import ftrlogo from './assets/chefhatIcon.png'
 import coffee from './assets/coffee.png'
 import money from './assets/money.jpg'
+import music from './assets/music.jpg'
 import { Button } from 'semantic-ui-react'
 
 const Projects = () => {
@@ -64,6 +65,14 @@ const Projects = () => {
                 video="https://www.loom.com/embed/87a5178acaea437784984004332921c0"
                 setVideo={setVideo}
                 langs={["python"]} /> {/* image, title, preview, link */}
+                <ProjectCard
+                image={music}
+                title="Beat Buddy"
+                preview="Predicts a users favorite music genre by having them take a quiz, and then assigns them a genre to their account, so they can generate random songs in that genre,
+                and save them to their playlist. Users can also share songs that they liked through the forum pages."
+                link="https://github.com/DirtyKeyboard/phase-4-project"
+                site="https://beatbuddy.andrewhawileh.com/"
+                langs={["js", "react", "python", "flask"]} /> {/* image, title, preview, link */}
             </div>
           </>}
 

@@ -32,6 +32,10 @@ const Blogs = () => {
                         preview="GitHub is one of the most important things for a coder to understand how to utilize. 9 times out of 10, it’s where all of our hard work will live when we are on the job, and it is also a very powerful tool to use when collaborating with other programmers."
                         link="https://medium.com/@andrewh829/the-basics-of-github-collaborating-1c18b8dd037c"
                         image="https://kinsta.com/wp-content/uploads/2018/04/what-is-github-1-1.png"/>
+          <ImgMediaCard title="Tips for your Portfolio Website"
+                        preview="As someone who is just stepping into the job market, one of the most important things we can have to present ourselves as software engineers is a project portfolio. More specifically, a website that has your portfolio in it. This can be a daunting task as there is a lot of different ways you can approach it, aside from the technical challenges, you will also have to be mindful to make sure your content stays meaningful and concise, so you don’t put recruiters to sleep."
+                        link="https://medium.com/@andrewh829/tips-for-your-portfolio-website-938e4ddd1691"
+                        image="https://www.creativefabrica.com/wp-content/uploads/2021/06/13/CV-or-Resume-Icon-Graphics-13336606-1-580x376.jpg"/>
 
         </div>
     </motion.div>
