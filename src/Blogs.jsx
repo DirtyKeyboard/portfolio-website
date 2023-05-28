@@ -37,6 +37,11 @@ const Blogs = () => {
                         link="https://medium.com/@andrewh829/tips-for-your-portfolio-website-938e4ddd1691"
                         image="https://www.creativefabrica.com/wp-content/uploads/2021/06/13/CV-or-Resume-Icon-Graphics-13336606-1-580x376.jpg"/>
 
+          <ImgMediaCard title="The basics of Tailwind CSS"
+                        preview="Tailwind CSS is a very powerful tool, that allows us to tweak our application styles to greater detail than possible with a pre styled component library."
+                        link="https://medium.com/@andrewh829/the-basics-of-tailwind-css-c6680ba3ae76"
+                        image="https://miro.medium.com/v2/resize:fit:720/format:webp/0*ffhZjzuyV6LiEmk1.png"/>
+
         </div>
     </motion.div>
     </>

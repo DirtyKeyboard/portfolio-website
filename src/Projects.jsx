@@ -8,6 +8,7 @@ import ftrlogo from './assets/chefhatIcon.png'
 import coffee from './assets/coffee.png'
 import money from './assets/money.jpg'
 import music from './assets/music.jpg'
+import launch from './assets/launch.png'
 import { Button } from 'semantic-ui-react'
 
 const Projects = () => {
@@ -73,6 +74,14 @@ const Projects = () => {
                 link="https://github.com/DirtyKeyboard/phase-4-project"
                 site="https://beatbuddy.andrewhawileh.com/"
                 langs={["js", "react", "python", "flask"]} /> {/* image, title, preview, link */}
+                <ProjectCard
+                image={launch}
+                title="LaunchPad"
+                preview="A schedule tracking application that doubles as social media. As a user, you can create events on your own schedule, as well as add friends so that you can view their calendar, as well as make requests to plan with friends, times are
+                automatically converted between time zones. This application is also mobile friendly!"
+                link="https://github.com/DirtyKeyboard/phase-5-project"
+                site="https://launchpad.andrewhawileh.com/"
+                langs={["js", "react", "node", "mobile"]} /> {/* image, title, preview, link */}
             </div>
           </>}
 

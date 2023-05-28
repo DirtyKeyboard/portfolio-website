@@ -26,7 +26,7 @@ const ProjectCard = ({image="https://www.salonlfc.com/wp-content/uploads/2018/01
                 <CardMedia
                     component="img"
                     alt="get/post"
-                    height="140"
+                    height="150"
                     image={image}
                 />
                 <CardContent>
