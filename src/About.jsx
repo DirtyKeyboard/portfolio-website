@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import { Header, Divider } from "semantic-ui-react";
 import { motion } from "framer-motion";
+import selfPortrait from "./assets/me.jpg";
 
 const About = () => {
     const label = {
@@ -78,7 +79,7 @@ const About = () => {
                 </p>
                 <br />
                 <img
-                    src="https://media.licdn.com/dms/image/D5603AQEuh47kLjFexA/profile-displayphoto-shrink_200_200/0/1683154699639?e=1688601600&v=beta&t=GT1PZgzvMpUdw8Qu2JTF17wORyNMxoJZE9dq1w_Oun4"
+                    src={selfPortrait}
                     style={{ borderRadius: "50%", width: "10vw" }}
                     alt="self portrait"
                 />
